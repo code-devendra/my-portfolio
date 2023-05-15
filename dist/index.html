@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en" class=" scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>codedevendra</title>
+  </head>
+  <body class="font-nunito h-screen">
+    <!-- Intro Section -->
+    <div class="h-full bg-gradient-to-t from-blue-300 dark:from-slate-700 dark:to-slate-900 relative overflow-hidden">
+      <!-- navbar -->
+      <nav class="w-full fixed top-0 bg-white shadow-sm dark:shadow-slate-800 dark:bg-slate-900 z-10">
+        <div class="container mx-auto py-5 flex items-center justify-between">
+          <div
+            class="ml-2 md:ml-0 text-2xl tracking-tight text-gray-700 dark:text-slate-50 font-bold"
+            id="logo"
+          > <a href="#">
+            <span class="text-blue-600">&lt;</span>
+            code-devendra
+            <span class="text-blue-600">/ &gt;</span></a>
+          </div>
+          <ul
+            class="hidden md:flex items-center text-gray-600 dark:text-slate-50 space-x-10 font-bold text-sm uppercase"
+          >
+            <li>
+              <a href="#" id="nav-list-item" class="hover:text-gray-500"
+                ><span class="hidden text-base text-blue-600">&#35;</span>
+                Home</a
+              >
+            </li>
+            <li>
+              <a href="#about" id="nav-list-item" class="hover:text-gray-500"
+                ><span class="hidden text-base text-blue-600">&#35;</span>About
+                me</a
+              >
+            </li>
+            <li>
+              <a href="#education" id="nav-list-item" class="hover:text-gray-500"
+                ><span class="hidden text-base text-blue-600">&#35;</span
+                >Education</a
+              >
+            </li>
+            <li>
+              <a href="#projects" id="nav-list-item" class="hover:text-gray-500"
+                ><span class="hidden text-base text-blue-600">&#35;</span
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#contact" id="nav-list-item" class="hover:text-gray-500"
+                ><span class="hidden text-base text-blue-600">&#35;</span
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="flex items-center space-x-6 md:space-x-0">
+            <img  id="dark-mode"
+              class="w-7 cursor-pointer"
+              src="./images/sun.png"
+              alt="sun img"
+            />
+            <div
+              class="md:hidden space-y-2 cursor-pointer z-30"
+              id="hamburger-icon"
+            >
+              <div class="w-6 h-0.5 mr-3 md:mr-0 bg-black dark:bg-white"></div>
+              <div class="w-6 h-0.5 mr-3 md:mr-0 bg-black dark:bg-white"></div>
+            </div>
+          </div>
+          <ul
+            class="hidden md:hidden absolute w-full text-center py-10 pt-12 space-y-7 text-slate-600 dark:text-slate-50 font-bold top-0 left-0 z-20 bg-white dark:bg-slate-900"
+            id="menu"
+          >
+            <li>
+              <a href="#" id="menu-list-item" class="hover:text-gray-500"
+                ><span class="hidden text-base text-blue-600">&#35;</span>
+                Home</a
+              >
+            </li>
+            <li>
+              <a href="#about" id="menu-list-item" class="hover:text-gray-500"
+                ><span class="hidden text-base text-blue-600">&#35;</span>About
+                me</a
+              >
+            </li>
+            <li>
+              <a href="#education" id="menu-list-item" class="hover:text-gray-500"
+                ><span class="hidden text-base text-blue-600">&#35;</span
+                >Education</a
+              >
+            </li>
+            <li>
+              <a href="#projects" id="menu-list-item" class="hover:text-gray-500"
+                ><span class="hidden text-base text-blue-600">&#35;</span
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#contact" id="menu-list-item" class="hover:text-gray-500"
+                ><span class="hidden text-base text-blue-600">&#35;</span
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Intro contect -->
+      <div class="">
+        <!-- image -->
+        <img
+          class="md:hidden lg:block w-[350px] lg:w-1/3 absolute right-[10%] lg:right-20 xl:right-40 top-10 lg:top-[20%] xl:top-[15%]"
+          src="./images/intro-img.png"
+          alt="intro image"
+        />
+        <!-- content -->
+        <div
+          class="w-[90%] md:w-[60%] lg:w-[40%] absolute top-[370px] md:top-1/3 left-3 md:left-32 dark:text-slate-50"
+        >
+          <!-- name -->
+          <p class="text-lg">
+            Hello👋,<br />
+            I am
+            <span class="text-xl text-blue-600 font-bold"
+              >Devendra Khinchi.</span
+            >
+          </p>
+          <h1 class="text-3xl md:text-4xl xl:text-5xl font-bold my-5">
+            I am a <span class="text-orange-600">Web Developer.</span>
+          </h1>
+          <!-- text -->
+          <p class="text-lg text-gray-600 dark:text-slate-300">
+            A 3rd year B.Tech student at Jaipur Engineering College with a
+            passion for full stack development. I am a individual who is eager
+            to learn and always up for new challenges.
+          </p>
+          <!-- intro-contact -->
+          <div class="mt-5">
+            <a href="#contact"><button
+              class="w-36 md:w-40 h-10 text-sm border-2 border-solid border-orange-600 hover:text-white uppercase font-bold mr-5 shadow-sm cursor-pointer hover:bg-orange-600"
+            >
+              Contact me
+            </button></a>
+            <a href="https://drive.google.com/file/d/13fAawuZi2fu9Q0SwAEfpSMEfBCyEKz4M/view?usp=share_link" target="_blank"><button
+              class="w-36 md:w-40 h-10 text-sm border border-solid border-slate-600 dark:border-slate-300 dark:text-slate-50 hover:border-2 uppercase font-bold shadow-sm cursor-pointer"
+            >
+              Resume ->
+            </button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About section -->
+    <!-- about values -->
+    <div class="w-full bg-slate-100 dark:bg-slate-800 dark:text-white py-12">
+      <div class="container flex flex-wrap justify-around mx-auto">
+        <div
+          class="w-full md:w-4/12 text-center flex flex-col items-center gap-1 mb-10 md:mb-0"
+        >
+          <img class="w-10 mb-2" src="./images/projects.svg" alt="" />
+          <h3 class="text-4xl md:text-6xl font-bold">25+</h3>
+          <p class="text-sm uppercase text-slate-800 dark:text-slate-300">projects</p>
+        </div>
+        <div
+          class="w-full md:w-4/12 text-center flex flex-col items-center gap-1 mb-10 md:mb-0"
+        >
+          <img class="w-10 mb-2" src="./images/codes.svg" alt="" />
+          <h3 class="text-4xl md:text-6xl font-bold">10000+</h3>
+          <p class="text-sm uppercase text-slate-800 dark:text-slate-300">lines of code</p>
+        </div>
+        <div
+          class="w-full md:w-4/12 text-center flex flex-col items-center gap-1"
+        >
+          <img class="w-10 mb-2" src="./images/questions.svg" alt="" />
+          <h3 class="text-4xl md:text-6xl font-bold">350+</h3>
+          <p class="text-sm uppercase text-slate-800 dark:text-slate-300">questions</p>
+        </div>
+      </div>
+    </div>
+    <!-- about content -->
+    <div id="about" class="w-full bg-white py-32 dark:bg-slate-900 dark:text-white">
+      <div class="container flex flex-wrap justify-around mx-auto">
+        <img
+          class="w-10/12 lg:w-1/3 rounded-sm order-2"
+          src="./images/about.jpg"
+          alt=""
+        />
+        <!-- info -->
+        <div class="w-10/12 mb-20 lg:mb-0 lg:w-1/2">
+          <h4 class="text-base text-blue-600 font-bold pb-4">#ABOUT ME</h4>
+          <h2 class="text-3xl font-semibold pb-3">Think Outside the Box</h2>
+          <p class="dark:text-slate-400">
+            A 3rd year B. Tech student at Jaipur Engineering College, aspiring to become a full stack
+developer. Having experience with programming languages such as Java and JavaScript, as
+well as web development frameworks or libraries like TailWind CSS, Express JS and Node.js.
+          </p>
+          <!-- skills -->
+          <div class="mt-4">
+            <h4 class="text-base text-gray-800 dark:text-slate-300 font-bold pb-2">SKILLS</h4>
+            <div class="flex flex-wrap gap-3">
+              <span
+                class="text-sm font-semibold text-gray-600 dark:text-slate-200 block w-fit h-auto py-1 px-2 border-2 border-blue-600 rounded-md text-center"
+                >HTML</span
+              >
+              <span
+                class="text-sm font-semibold text-gray-600 dark:text-slate-200 block w-fit h-auto py-1 px-2 border-2 border-blue-600 rounded-md text-center"
+                >CSS</span
+              >
+              <span
+                class="text-sm font-semibold text-gray-600 dark:text-slate-200 block w-fit h-auto py-1 px-2 border-2 border-blue-600 rounded-md text-center"
+                >JavaScript</span
+              >
+              <span
+                class="text-sm font-semibold text-gray-600 dark:text-slate-200 block w-fit h-auto py-1 px-2 border-2 border-blue-600 rounded-md text-center"
+                >BootStrap</span
+              >
+              <span
+                class="text-sm font-semibold text-gray-600 dark:text-slate-200 block w-fit h-auto py-1 px-2 border-2 border-blue-600 rounded-md text-center"
+                >TailWind CSS</span
+              >
+              <span
+                class="text-sm font-semibold text-gray-600 dark:text-slate-200 block w-fit h-auto py-1 px-2 border-2 border-blue-600 rounded-md text-center"
+                >JQuery</span
+              >
+              <span
+                class="text-sm font-semibold text-gray-600 dark:text-slate-200 block w-fit h-auto py-1 px-2 border-2 border-blue-600 rounded-md text-center"
+                >NodeJS</span
+              >
+              <span
+                class="text-sm font-semibold text-gray-600 dark:text-slate-200 block w-fit h-auto py-1 px-2 border-2 border-blue-600 rounded-md text-center"
+                >Express JS</span
+              >
+              <span
+                class="text-sm font-semibold text-gray-600 dark:text-slate-200 block w-fit h-auto py-1 px-2 border-2 border-blue-600 rounded-md text-center"
+                >GIT</span
+              >
+              <span
+                class="text-sm font-semibold text-gray-600 dark:text-slate-200 block w-fit h-auto py-1 px-2 border-2 border-blue-600 rounded-md text-center"
+                >GitHub</span
+              >
+              <span
+                class="text-sm font-semibold text-gray-600 dark:text-slate-200 block w-fit h-auto py-1 px-2 border-2 border-blue-600 rounded-md text-center"
+                >JAVA</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Education section -->
+    <div id="education" class="w-full bg-slate-50 dark:bg-slate-800 py-32">
+      <div class="container flex flex-wrap justify-around mx-auto">
+        <img
+          class="w-10/12 lg:w-1/3 rounded-sm order-2"
+          src="./images/education.jpg"
+          alt=""
+        />
+        <!-- info -->
+        <div class="w-10/12 mb-20 lg:mb-0 lg:w-1/2 dark:text-white">
+          <h4 class="text-base text-blue-600 font-bold pb-4">#EDUCATION</h4>
+          <!-- college -->
+          <div class="w-full bg-white dark:bg-slate-950 p-3 rounded-sm mb-5 shadow-sm">
+            <h5 class="uppercase text-sm text-slate-500 dark:text-slate-300 mb-3">
+              2020 - present
+            </h5>
+            <h2 class="text-3xl font-semibold mb-1">
+              Bachelor of Technology(B.Tech)
+            </h2>
+            <h5 class="text-base text-blue-400 font-bold mb-4">
+              COMPUTER SCIENCE
+            </h5>
+            <p class="text-sm text-slate-500 dark:text-slate-300 mb-1">
+              1. Currently pursuing a B.Tech degree in Computer Science, with a focus on developing a strong foundation in programming, algorithms, and software development.
+            </p>
+            <p class="text-sm text-slate-500 dark:text-slate-300">
+              2. Demonstrating a passion for learning and applying theoretical concepts to real-world projects through coursework and practical assignments in the field of computer science.
+            </p>
+          </div>
+          <!-- school -->
+          <div class="w-full bg-white dark:bg-slate-950 p-3 rounded-sm shadow-sm">
+            <h5 class="uppercase text-sm text-slate-500 dark:text-slate-300 mb-3">2019 - 2020</h5>
+            <h2 class="text-3xl font-semibold mb-1">Senior Secondary (12th)</h2>
+            <h5 class="text-base text-blue-400 font-bold mb-4">
+              Sci. &amp; Maths
+            </h5>
+            <p class="text-sm text-slate-500 dark:text-slate-300">
+              1. Successfully completed senior secondary education with a focus on core subjects. <br>
+              2. Achieved academic excellence during senior secondary education.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Projects section -->
+    <div id="projects" class="w-full py-32 dark:bg-slate-900">
+      <div class="container mx-auto mb-5">
+        <h4 class="text-base text-blue-600 font-bold pb-4 text-center">
+          #PROJECTS
+        </h4>
+      </div>
+      <div class="container mx-auto flex flex-wrap gap-14 justify-around">
+        <!-- projects -->
+        <div class="w-11/12 md:w-2/5 mx-auto">
+          <div class="h-[400px] md:h-[430px] overflow-hidden mb-5 shadow-md">
+            <img
+              class="h-full w-full shadow-sm"
+              src="./images/project-1.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <h3 class="mb-3">
+              <a
+                class="text-xl md:text-2xl text-blue-600 font-bold"
+                href="#"
+                target="_blank"
+              >
+                Portfolio website ->
+              </a>
+            </h3>
+            <div>
+              <span class="text-sm text-slate-600 dark:text-slate-400 font-semibold">HTML</span> /
+              <span class="text-sm text-slate-600 dark:text-slate-400 font-semibold">CSS</span> /
+              <span class="text-sm text-slate-600 dark:text-slate-400 font-semibold"
+                >JavaScript</span
+              >
+              /
+              <span class="text-sm text-slate-600 dark:text-slate-400 font-semibold"
+                >TailWind CSS</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="w-11/12 md:w-2/5 mx-auto">
+          <div class="h-[400px] md:h-[430px] overflow-hidden mb-5 shadow-md">
+            <img
+              class="h-full w-full shadow-sm"
+              src="./images/project-2.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <h3 class="mb-3">
+              <a
+                class="text-xl md:text-2xl text-blue-600 font-bold"
+                href="https://code-devendra.github.io/my-projects/practice-gfg-site-clone/index.html"
+                target="_blank"
+              >
+                GfG practice Site Clone ->
+              </a>
+            </h3>
+            <div>
+              <span class="text-sm text-slate-600 dark:text-slate-400 font-semibold">HTML</span> /
+              <span class="text-sm text-slate-600 dark:text-slate-400 font-semibold">CSS</span> /
+              <span class="text-sm text-slate-600 dark:text-slate-400 font-semibold"
+                >BootStrap 5</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="w-11/12 md:w-2/5 mx-auto">
+          <div class="h-[400px] md:h-[430px] overflow-hidden mb-5 shadow-md">
+            <img
+              class="h-full w-full shadow-sm"
+              src="./images/project-3.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <h3 class="mb-3">
+              <a
+                class="text-xl md:text-2xl text-blue-600 font-bold"
+                href="https://code-devendra.github.io/lnb-fullstack-training/number-guessing-game/"
+                target="_blank"
+              >
+                Number Guessing Game ->
+              </a>
+            </h3>
+            <div>
+              <span class="text-sm text-slate-600 dark:text-slate-400 font-semibold">HTML</span> /
+              <span class="text-sm text-slate-600 dark:text-slate-400 font-semibold">CSS</span> /
+              <span class="text-sm text-slate-600 dark:text-slate-400 font-semibold"
+                >JavaScript</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="w-11/12 md:w-2/5 mx-auto">
+          <div class="h-[400px] md:h-[430px] overflow-hidden mb-5 shadow-md">
+            <img
+              class="h-full w-full shadow-sm"
+              src="./images/project-4.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <h3 class="mb-3">
+              <a
+                class="text-xl md:text-2xl text-blue-600 font-bold"
+                href="https://code-devendra.github.io/my-projects/password-generator/"
+                target="_blank"
+              >
+                Random Password Generator ->
+              </a>
+            </h3>
+            <div>
+              <span class="text-sm text-slate-600 dark:text-slate-400 font-semibold">HTML</span> /
+              <span class="text-sm text-slate-600 dark:text-slate-400 font-semibold">CSS</span> /
+              <span class="text-sm text-slate-600 dark:text-slate-400 font-semibold"
+                >JavaScript</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="w-11/12 md:w-2/5 mx-auto">
+          <div class="h-[400px] md:h-[430px] overflow-hidden mb-5 shadow-md">
+            <img
+              class="h-full w-full shadow-sm"
+              src="./images/project-5.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <h3 class="mb-3">
+              <a
+                class="text-xl md:text-2xl text-blue-600 font-bold"
+                href="https://code-devendra.github.io/my-projects/calculator/"
+                target="_blank"
+              >
+                CALCULATOR ->
+              </a>
+            </h3>
+            <div>
+              <span class="text-sm text-slate-600 dark:text-slate-400 font-semibold">HTML</span> /
+              <span class="text-sm text-slate-600 dark:text-slate-400 font-semibold">CSS</span> /
+              <span class="text-sm text-slate-600 dark:text-slate-400 font-semibold"
+                >JavaScript</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="w-11/12 md:w-2/5 mx-auto">
+          <div class="h-[400px] md:h-[430px] overflow-hidden mb-5 shadow-md">
+            <img
+              class="h-full w-full shadow-sm"
+              src="./images/project-6.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <h3 class="mb-3">
+              <a
+                class="text-xl md:text-2xl text-blue-600 font-bold"
+                href="https://code-devendra.github.io/CHUCKNORRIS-Random-Jokes/index.html"
+                target="_blank"
+              >
+                CHUCKNORRIS Jokes Site ->
+              </a>
+            </h3>
+            <div>
+              <span class="text-sm text-slate-600 dark:text-slate-400 font-semibold">HTML</span> /
+              <span class="text-sm text-slate-600 dark:text-slate-400 font-semibold">CSS</span> /
+              <span class="text-sm text-slate-600 dark:text-slate-400 font-semibold"
+                >JavaScript</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact section -->
+    <div id="contact" class="w-full py-20 bg-slate-50 dark:bg-slate-800">
+      <div class="container mx-auto">
+        <!-- top -->
+        <h4 class="text-base text-blue-600 font-bold mb-8 text-center">
+          #CONTACT ME
+        </h4>
+        <!-- bottom -->
+        <div class="w-full dark:text-white flex flex-wrap justify-around items-center">
+          <!-- left -->
+          <div class="w-full md:w-1/3 p-4">
+            <h2 class="text-3xl mb-8">Let's Connect</h2>
+            <div class="flex justify-start gap-2 text-lg mb-4">
+              <img src="./images/phone-icon.svg" alt="" />
+              <p class="text-slate-600 dark:text-slate-200">+91 8824033257</p>
+            </div>
+            <div class="flex justify-start gap-2 text-lg mb-4">
+              <img src="./images/email-icon.svg" alt="" />
+              <p class="text-slate-600 dark:text-slate-200">devendrakhinchi.work@gmail.com</p>
+            </div>
+            <div class="flex justify-start gap-2 text-lg mb-4">
+              <img src="./images/address-icon.svg" alt="" />
+              <p class="text-slate-600 dark:text-slate-200">Jaipur, Rajasthan, India</p>
+            </div>
+          </div>
+          <!-- right -->
+          <form class="w-full md:w-2/5 p-4 flex flex-col items-center gap-5" name="contact-us">
+            <input class="w-full p-2 ring-1 ring-blue-500 dark:text-white dark:ring-0 dark:bg-slate-700 rounded-sm" type="text" name="name" placeholder="Full Name" required>
+            <input class="w-full p-2 ring-1 ring-blue-500 dark:text-white dark:ring-0 dark:bg-slate-700 rounded-sm" type="email" name="email" placeholder="Email" required>
+            <textarea class="w-full h-60 p-2 ring-1 ring-blue-500 dark:text-white dark:ring-0 dark:bg-slate-700 rounded-sm" name="message" placeholder="Message" cols="30" rows="10" required></textarea>
+            <button class="w-full px-3 py-2 bg-blue-600 text-white font-semibold rounded-md cursor-pointer" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="w-full py-5 bg-slate-800 dark:bg-slate-700">
+      <div class="container mx-auto flex flex-wrap justify-between items-center">
+        <div class="w-1/2 md:w-auto ml-2 md:ml-0 text-xl md:text-2xl tracking-tight text-gray-100 font-bold"
+            id="logo">
+            <a href="#">
+            <span class="text-blue-600">&lt;</span>
+            code-devendra
+            <span class="text-blue-600">/ &gt;</span></a>
+        </div>
+        <p class="w-full md:w-auto order-3 md:order-none text-slate-200 mt-5 md:mt-0 text-center">&copy; 2023 by code-devendra</p>
+        <div class="w-1/3 md:w-auto flex gap-3 items-center">
+          <a href="https://leetcode.com/codedevendra" target="_blank"><img class="w-7" src="./images/leetcode-icon.png" alt=""></a>
+          <a href="https://github.com/code-devendra" target="_blank"><img class="w-7" src="./images/github-icon.svg" alt=""></a>
+          <a href="https://linkedin.com/in/codedevendra" target="_blank"><img class="w-7" src="./images/linkedin-icon.svg" alt=""></a>
+        </div>
+      </div>
+    </footer>
+    <!-- credits -->
+    <div class="w-full py-2 bg-yellow-400 dark:bg-yellow-500">
+      <div class="container mx-auto text-sm font-semibold dark:text-white text-center">
+        <a href="https://www.vecteezy.com/free-png/work" target="_blank">Work PNGs by Vecteezy</a><br>
+        <a href="https://www.flaticon.com/icons" target="_blank">icons created by Freepik - Flaticon</a>
+      </div>
+    </div>
+    <!-- script -->
+    <script src="./index.js"></script>
+  </body>
+</html>
