@@ -5,6 +5,9 @@ const menu = document.querySelector("#menu");
 const navListItems = document.querySelectorAll("#nav-list-item");
 const menuListItems = document.querySelectorAll("#menu-list-item");
 const hashtags = document.querySelectorAll("#nav-list-item span");
+const projectsCount = document.querySelector("#projects-count");
+const linesCount = document.querySelector("#lines-count");
+const questionsCount = document.querySelector("#questions-count");
 
 // form
 const scriptURL =
@@ -40,3 +43,28 @@ for (let i = 0; i < navListItems.length; i++) {
   });
   menuListItems[i].addEventListener("click", menuToggle);
 }
+
+let projectCount = 1;
+let lineCount = 10;
+let questionCount = 5;
+
+setInterval(() => {
+  if (projectCount <= 25) {
+    projectsCount.textContent = projectCount;
+    projectCount++;
+  }
+}, 50);
+
+setInterval(() => {
+  if (lineCount <= 10000) {
+    linesCount.textContent = lineCount;
+    lineCount += 30;
+  }
+}, 1);
+
+setInterval(() => {
+  if (questionCount <= 350) {
+    questionsCount.textContent = questionCount;
+    questionCount += 5;
+  }
+}, 10);

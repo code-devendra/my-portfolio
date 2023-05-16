@@ -712,19 +712,6 @@ video {
   height: 100vh;
 }
 
-.min-h-fit {
-  min-height: -moz-fit-content;
-  min-height: fit-content;
-}
-
-.min-h-\[750px\] {
-  min-height: 750px;
-}
-
-.min-h-\[720px\] {
-  min-height: 720px;
-}
-
 .min-h-\[730px\] {
   min-height: 730px;
 }
